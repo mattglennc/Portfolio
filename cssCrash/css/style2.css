@@ -1,0 +1,104 @@
+body{
+    background-color: #f4f4f4;
+    color:#555;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px;
+    line-height:1.6em;
+    margin:0;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+
+}
+
+#main-header{
+    background: linear-gradient(90deg,coral, #161618);
+    color:white;
+}
+
+#navbar{
+    background-color:rgb(65, 60, 60);
+    color:white;
+}
+
+#navbar ul{
+    padding:0;
+    list-style: none;
+}
+
+#navbar li{
+    display:inline;
+}
+
+#navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding:10px;
+    border-radius: 15px;
+}
+
+#navbar a:hover{
+    background-color:rgb(175, 166, 166);
+    color: rgb(7, 7, 7);
+    
+}
+
+#showcase{
+    background-image:url('../images/Ankole.jpg');
+    background-position:center right;
+    background-size:cover;
+    min-height:300px;
+    margin-bottom: 30px;
+    text-align:center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#showcase h1{
+    color:rgb(224, 219, 219);
+    font-size:50px;
+    line-height: 1.6em;
+    padding-top:30px;
+}
+
+#main{
+    float:left;
+    width:70%;
+    padding:0 30px;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float:right;
+    width:30%;
+    background:#333;
+    color:#fff;
+    padding:10px;
+    box-sizing: border-box;
+}
+
+#sidebar:hover{animation-name: background-color; animation-duration: 500ms;}
+@keyframes background-color{ 100%{ background-color: #4791d0; } }
+
+
+#main-footer{
+    background: #333;
+    color:#fff;
+    text-align: center;
+    padding:20px;
+    margin-top:40px;
+}
+
+@media(max-width:600px){
+    #main{
+        width:100%;
+        float:none;
+    }
+    #sidebar{
+        width:100%;
+        float:none;
+    }
+}
