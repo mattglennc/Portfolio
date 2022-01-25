@@ -5,9 +5,7 @@ html,body{
     background-color:rgb(124, 120, 115);
 }
 
-header{
-    text-align:center;
-}
+
 .container-1 div{
     border:1px #ccc solid;
     border-radius:3px;
@@ -15,13 +13,16 @@ header{
 }
 
 .container-1{
-    display: flex;
+    display: grid;
+
+    grid-template-columns: 1fr 5fr 1fr;
 
    /*align-items: flex-start;
     align-items: flex-end;
     align-items: center;*/
     height:100vh;
 }
+
 
 nav a {
     color: white;
@@ -30,37 +31,9 @@ nav a {
     font-size: 16px;
 }
 
-#text{
-    padding:20px;
-}
-
-.box-1{
-    order:2;
-    width:70%;
-    flex-grow: 0;
-    background-color: rgb(92, 36, 36);
-}
-
-.box-2{
-    flex:1;
-    order:1;
-    width:15%;
-    background:url('../images/background\ 2.0.png') no-repeat;
-    background-size: 1500px;
-    padding-bottom:100%;
-}
-
-.box-3{
-    flex:1;
-    width:15%;
-    order:3;
-    background-color: rgb(222, 224, 64);
-    background:url('../images/background\ 2.0.png') no-repeat -950px 0;
-    background-size: 1500px;
-}
-
 nav ul{
     list-style: none;
+    padding: 0;
 }
 
 nav li{
@@ -70,6 +43,28 @@ nav li{
 li a{
     text-decoration: none;
 }
+
+#text{
+    padding:20px;
+}
+
+.box-1{
+    text-align: center;
+    background-color: rgb(88, 128, 112);
+}
+
+.box-2{
+    background:url('../images/background\ 2.0.png') no-repeat;
+    background-size: 1500px;
+    padding-bottom:100%;
+}
+
+.box-3{
+    background-color: rgb(222, 224, 64);
+    background:url('../images/background\ 2.0.png') no-repeat -950px 0;
+    background-size: 1500px;
+}
+
 
 @media(max-width : 768px) {
     .box-1{
