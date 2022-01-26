@@ -1,8 +1,8 @@
 html,body{
     font-family:Arial, Helvetica, sans-serif;
     font-size:24;
-    height: 100%;
-    margin-bottom: 2em;
+    
+    margin-bottom: 1em;
     background-color:rgb(124, 120, 115);
 }
 
@@ -22,7 +22,7 @@ html,body{
    /*align-items: flex-start;
     align-items: flex-end;
     align-items: center;*/
-    height:100vh;
+    grid-auto-rows:minmax(100vh,auto);
 }
 
 
@@ -52,13 +52,25 @@ li a{
 
 .box-1{
     text-align: center;
-    background-color: rgb(88, 128, 112);
+
+    background: linear-gradient(75deg, rgb(43, 63, 55), rgb(134, 196, 171));
+    position: relative;
+
 }
+
+.box-1 .main{
+    border: none;
+    position: absolute;
+    margin:0;
+    padding: 25%;
+    
+}
+
 
 .box-2{
     background:url('../images/background\ 2.0.png') no-repeat;
     background-size: 1500px;
-    padding-bottom:100%;
+
 }
 
 .box-3{
@@ -69,6 +81,9 @@ li a{
 
 
 @media(max-width : 768px) {
+    .container-1{
+        grid-template-columns: 1fr;
+    }
     .box-1{
         width:100%;
     }
