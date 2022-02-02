@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 html,body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     font-size:24;
-    
     margin-bottom: 1em;
     background-color:rgb(124, 120, 115);
 }
@@ -18,53 +19,34 @@ html,body{
 
     grid-template-columns: 1fr 5fr 1fr;
     grid-gap: 1em;
-
-   /*align-items: flex-start;
-    align-items: flex-end;
-    align-items: center;*/
     grid-auto-rows:minmax(100vh,auto);
 }
 
 
-nav a {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-}
-
-nav ul{
-    list-style: none;
-    padding: 0;
-}
-
-nav li{
-    display: inline;
-}
-
-li a{
-    text-decoration: none;
-}
-
-#text{
-    padding:20px;
-}
 
 .box-1{
-    text-align: center;
-
     background: linear-gradient(75deg, rgb(43, 63, 55), rgb(134, 196, 171));
     position: relative;
-
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .box-1 .main{
     border: none;
     position: absolute;
-    margin:0;
-    padding: 25%;
-    
 }
+
+.box-1 .main h1{
+    font-size:4vw;
+    margin: 0;
+}
+
+.box-1 .main h2{
+    font-size: 2vw;
+}
+
 
 
 .box-2{
