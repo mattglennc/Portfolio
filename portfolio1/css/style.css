@@ -146,10 +146,10 @@ a{
 
 
 
-@media(max-width : 768px) {
+@media(max-width : 800px) {
     
     .container-1{
-        grid-template-columns: 1fr;
+        grid-template-columns: 0.99fr;
         width:98%;
         height: 98%;
     }
@@ -166,19 +166,24 @@ a{
     }
 
     .box-1 .main{
-        padding: 0px;
+        left:0px;
+        right:0px;
     }
 
     .box-1 .container-34, .box-1 .container-12{
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 0px;
+        margin-right: 0px;
+        left:0px;
+        right:0px;
     }
 
     .box-1 .container-12{
         margin-top: 0;
+       grid-column-gap: 20vw;
     }
     .box-1 .container-34{
         margin-bottom: 0;
+        grid-column-gap: 20vw;
     }
 
     .box11, .box12, .box14{
