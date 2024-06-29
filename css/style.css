@@ -45,7 +45,7 @@ a{
 }
 
 .box-1 .main h1{
-    font-size:5vw;
+    font-size:calc(12px + 5vw);
     margin: 0;
     stroke-width: 1px;
     color:antiquewhite;
@@ -53,7 +53,7 @@ a{
 }
 
 .box-1 .main h2{
-    font-size: 2vw;
+    font-size:calc(12px + 1vw);
     color:rgb(62, 42, 82);
 }
 
@@ -179,15 +179,16 @@ a{
 
     .box-1 .container-12{
         margin-top: 0;
-       grid-column-gap: 20vw;
+       grid-column-gap: 5vw;
     }
     .box-1 .container-34{
         margin-bottom: 0;
-        grid-column-gap: 20vw;
+        grid-column-gap: 5vw;
     }
 
     .box11, .box12, .box14{
         font-size: 30px;
+
     }
 
     .box13{
