@@ -4,7 +4,7 @@ html,body{
     font-family: 'Poppins', Arial, sans-serif;
     font-size:24;
     background-color:rgb(65, 84, 69);
-    overflow: hidden;
+    margin:7px;
 }
 
 a{
@@ -44,6 +44,45 @@ h3{
     margin-bottom:0;
 }
 
+.html{
+    background-color:rgb(230, 171, 95) ;
+}
+
+.css{
+    background-color:rgb(250, 191, 191) ;
+}
+
+.react{
+    background-color:rgb(168, 227, 203) ;
+}
+
+.nodejs{
+    background-color:rgb(149, 143, 175) ;
+}
+
+.mysql{
+    background-color:rgb(226, 228, 139) ;
+}
+
+.python{
+    background-color:rgb(135, 204, 133) ;
+}
+
+.languages{
+    margin-top:.25rem;
+}
+
+.html, .css, .react, .nodejs, .mysql, .python {
+    font-size:1.2rem;
+    padding:3px;
+    line-height: 1.75rem;
+    border-radius:5px;
+    border: solid #000;
+    color:black;
+    border-width:2px;
+    font-family:sans-serif;
+}
+
 .list-line{
     display:flex;
     flex-direction: column;
@@ -52,6 +91,16 @@ h3{
 .list-text{
     font-size: 1.25rem;
     line-height: 1.75rem;
+    font-weight: bold;
+}
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+  }
+
+.position,.prjDesc{
+    color:#bfbfbf;
 }
 
 
@@ -83,7 +132,8 @@ h3{
     border: none;
     border-width: 0; 
     border : 0;
-    gap:5%;
+    gap:2.5%;
+    margin:0px 20px;
     
 }
 
@@ -99,11 +149,26 @@ h3{
     margin-bottom: 20px;
 }
 
-.box11, .box12, .box13, .box14{
+.box11{
+    /*max-height:300px;*/
+}
+
+.profEx{
+
+}
+
+.leftbox{
+    display:grid;
+    grid-template-rows: 2fr 1.5fr;
+    flex: 0 0 50%;
+    grid-row-gap:20px;
+}
+
+
+.leftbox .box11, .box12, .box13, .box14{
     display: flex;
     flex-basis:50%;
     flex-direction: column;
-    justify-content: center;
     text-align:left;
     background: rgb(53, 66, 56);
     border-radius: 10px;
@@ -140,6 +205,7 @@ h3{
         width:98%;
         height: 98%;
     }
+
     
 
     .box-1{
@@ -158,7 +224,7 @@ h3{
     }
 
     .box-1 .container-34, .box-1 .container-12{
-        margin-left: 0px;
+        margin-left: 10px;
         margin-right: 0px;
         left:0px;
         right:0px;
@@ -174,8 +240,20 @@ h3{
         margin-bottom: 0;
         grid-column-gap: 5vw;
     }
+
+    .leftbox{
+        grid-template-rows: 1fr;
+    }
+    .container-12 .leftbox .box14{
+        display:none;
+    }
     
 
     
 }
 
+@media(max-width : 500px) {
+    .job-box{
+        flex-direction:column;
+    }
+}
