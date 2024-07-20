@@ -24,6 +24,7 @@ a{
     padding-top:0;
     padding-bottom:0;
     grid-template-columns: 1fr 5fr 1fr;
+    gap:1rem;
     grid-auto-rows:minmax(98vh,auto);
 }
 
@@ -39,7 +40,7 @@ ul{
 
 
 h3{
-    font-size:1.6rem;
+    font-size:1.9rem;
     text-align:center;
     margin-bottom:0;
 }
@@ -72,7 +73,7 @@ h3{
     margin-top:.25rem;
 }
 
-.html, .css, .react, .nodejs, .mysql, .python {
+.html, .css, .react, .nodejs, .mysql, .python{
     font-size:1.2rem;
     padding:3px;
     line-height: 1.75rem;
@@ -106,7 +107,7 @@ a {
 
 .box-1{
     /*background: linear-gradient(75deg, rgb(43, 63, 55), rgb(134, 196, 171));*/
-    text-align: center;
+    /*text-align: center;*/
     display: flex;
     flex-direction:column;
     align-items: center;
@@ -120,7 +121,7 @@ a {
 
 .box-1 .main h1{
     font-size:calc(12px + 5vw);
-    margin: 2vw;
+    margin: 2vw 0vw 0vw 2vw;
     stroke-width: 1px;
     color:antiquewhite;
     text-shadow: 4px 4px 8px black;
@@ -163,6 +164,42 @@ a {
     flex: 0 0 50%;
     grid-row-gap:20px;
 }
+
+header{
+    background: rgb(53, 66, 56);
+    border-radius: 10px;
+    border-width: 2; 
+    box-shadow: 4px 4px 8px black;
+    font-family: Garamond, serif;
+    color: rgb(255, 255, 255);   
+    padding-top: 1.3rem;
+    margin:0px 20px;
+}
+
+header h2{
+    margin-left:2vw;
+    margin-top:0rem;
+    padding-bottom:1.3rem;
+}
+
+.seeMore{
+    text-align:right;
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
+.seeMoreText:hover {
+    background-color: white;
+    color:rgb(53, 66, 56);
+    border-style:none;
+    border-radius:3px;
+    padding:3px;
+  }
+
+.box12{
+    justify-content: space-between;
+}
+
 
 
 .leftbox .box11, .box12, .box13, .box14{
@@ -246,6 +283,10 @@ a {
     }
     .container-12 .leftbox .box14{
         display:none;
+    }
+
+    header{
+        margin:0px;
     }
     
 
